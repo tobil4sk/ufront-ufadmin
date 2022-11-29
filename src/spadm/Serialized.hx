@@ -73,7 +73,7 @@ class Serialized {
 			return "";
 		var p = new hscript.Parser();
 		p.allowJSON = true;
-		var e = p.parse(new haxe.io.StringInput(value));
+		var e = p.parseString(value);
 		buf = new StringBuf();
 		shash = new Map();
 		scount = 0;
